@@ -7,11 +7,19 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-
+  @media only screen and (max-width: $bp-800px) {
+    grid-column: full-start / full-end;
+  }
   &__list {
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    @media only screen and (max-width: $bp-800px) {
+      flex-direction: row;
+    }
+    @media only screen and (max-width: $bp-600px) {
+      flex-direction: column;
+    }
   }
   &__realtor {
     display: grid;
