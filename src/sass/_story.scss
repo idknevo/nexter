@@ -5,6 +5,7 @@
         rgba($color-main, 0.5)
       ),
       url("../imgs/back.jpg");
+    background-size: cover;
     grid-column: full-start / col-end 4;
     display: grid;
     align-items: center;
@@ -38,7 +39,7 @@
   }
 
   &__text {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 4rem;
   }
