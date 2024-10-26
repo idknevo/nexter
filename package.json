@@ -7,9 +7,9 @@
     "devserver": "live-server",
     "start": "npm-run-all --parallel watch:sass devserver",
     "compile:css": "sass src/sass/main.scss src/css/style.css",
-    "prefix:css": "postcss-cli --use autoprefixer -b 'last 10 versions' src/css/style.css -o src/css/style.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/style.css -o src/css/style.css",
     "compress:css": "sass src/css/style.css src/css/style.css --style compressed",
-    "build": "npm-run-all compile:css prefix:css compres:css"
+    "build": "npm-run-all compile:css prefix:css compress:css"
   },
   "author": "nevo",
   "license": "ISC",
